@@ -1,0 +1,46 @@
+<div class="row banner">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-4 animated fadeInLeft">
+                <h1>Love</h1>
+                <p>Our Collections consists of quick-ship pieces offered in a wide variety of color and finish options, while
+                    each Commission is made to order based on your project's specific needs from locally-sourced solid woods.</p>
+                <p>Everything is handmade in the USA from solid, honest materials and built to last a lifetime.</p>
+            </div>
+            <div class="col-xs-12 col-sm-7">
+                <ngx-gallery [options]="galleryOptions" [images]="galleryImages"></ngx-gallery>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col" *ngFor="let product of productGallery">
+        <div class="card">
+            <div class="card-img-top">
+                <ngx-gallery [options]="productGalleryOptions" [images]="product.images"></ngx-gallery>
+            </div>
+
+            <div class="card-body">
+                <h5 class="card-title">{{product.title}}</h5>
+                <p class="card-text">{{product.description}}</p>
+                <a href="mailto://" class="btn btn-primary">Inquiry</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="flox-row bg-phone sub-banner animated fadeInUp">
+    <div class="container background-gray-30">
+        <div class="row">
+            <div class="col-xs-12" style="padding:30px;">
+                <h1>Made in Oregon</h1>
+                <p class="text-justify">
+                        Our commissioned pieces are one of a Kind. Each and every piece is made just for you.
+                        Completely Custom. Every dimension is made to fit your space.
+                        Finished Just Right. A wide variety of materials and finishes available.
+                        Sure to be a conversation piece.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
